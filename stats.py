@@ -17,8 +17,14 @@ def get_letter_count(string):
                 else:
                     letters[letter] += 1
 
-        return letters 
+        return letters
 
-def sorted_letter_count(dict):
-    sorted = sorted(dict)
-    return sorted      
+def letter_format(dict):
+        dict_list = []
+        for i in dict:
+            dict_list.append({"char":f"{i}", "num":dict[i]})
+        return dict_list
+
+def sort_on(items):
+        return items["num"]
+
